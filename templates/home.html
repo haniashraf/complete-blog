@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div class="jumbotron text-center">
+		<h1>Welcome To Sheri Media</h1>
+		<p class="lead">This is a private social media app only for Sheri Co-operation members</p>
+		{% if session.logged_in == NULL %}
+			<a class="btn btn-primary btn-lg" href="/register">Register</a>
+			<a class="btn btn-primary btn-lg" href="/login">Login</a>
+		{% endif %}
+	</div>
+{% endblock content %}

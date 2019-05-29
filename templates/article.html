@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+	<h1 style="padding-left: 50px;">{{article.title}}</h1>
+	<small style="padding-left: 50px;">Written By {{article.author}} on {{article.create_date}}</small>
+	<div style ="padding-left: 50px; padding-top: 30px;">
+		{{article.body}}
+	</div>
+{% endblock content %}
